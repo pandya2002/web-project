@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helmets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('/galary/body\ bg.png')
+        }
+
+        header {
+            background: url('/galary/headerbg.png');
+            background-size: cover;
+            display: flex;
+            height: 150px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: right;
+            background-color: #333;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            position: relative;
+            display: block;
+            padding: 14px 20px;
+            color: white;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 5px;
+            bottom: 0;
+            left: 0;
+            background-color: #94f722;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        nav a:hover::before {
+            visibility: visible;
+            width: 100%;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .grid-item {
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .grid-item p {
+            margin-top: 5px;
+            font-weight:bolder;
+            color:rgb(252, 251, 250);
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="#helmets">Helmets</a>
+        <a href="/gears.html">Protective Gears</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+    <header>
+        <h1>HELMETS</h1>
+          </header>
+    <div class="container">
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="https://orionmotorsindia.com/wp-content/uploads/2023/05/MT-KRE-PLUS-CARBON-PROJECTILE-GLOSS-HELMETS-Grey-1.png"
+                    alt="MT KRE SV">
+                <p>MT KRE SV</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://powersports.in/cdn/shop/products/Mthelmet-targoFrog-Gloss-FluorGreen-1.jpg?v=1654075526&width=1800"
+                    alt="MT TARGO">
+                <p>MT TARGO</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://www.oxfordproducts.com/graphics_cache/f/f/7665831-zz_m13340000113-2--.jpg"
+                    alt="MT STINGER">
+                <p>MT STINGER</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://www.tradeinn.com/f/13709/137091090/mt-helmets-kre-snake-carbon-2.0-full-face-helmet.jpg"
+                    alt="MT KRE SNAKE CARBON">
+                <p>MT KRE SNAKE CARBON</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://sapmotors.com/wp-content/uploads/2023/03/Falcon-Mens-Helmet-Glossy-Black-Neon-Yellow-1.jpeg"
+                    alt=" Apex Falcon Helmet Glossy Black Neon Yellow">
+                <p>Apex Falcon Glossy Black Neon Yellow</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://vegaauto.com/wp-content/uploads/2023/02/Dull-Black-Blue-4.jpg" alt="Bolt Crown VEGA">
+                <p>VEGA BOLT CROWN</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

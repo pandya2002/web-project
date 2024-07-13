@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protective Gears</title>
+    <style>
+ body {
+            font-family: Arial, sans-serif;
+            background: url(/galary/body\ bg.png)      
+        }
+
+        header {
+            background: url(/galary/headerbg.png);
+            background-size: cover;
+            display: flex;
+            height: 150px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: right;
+            background-color: #333;
+        
+        }
+
+        nav a {
+            text-decoration: none;
+            position: relative;
+            display: block;
+            padding: 14px 20px;
+            color: white;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 5px;
+            bottom: 0;
+            left: 0;
+            background-color: #94f722;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        nav a:hover::before {
+            visibility: visible;
+            width: 100%;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .grid-item {
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 80%;
+            cursor: pointer;
+        }
+
+        .grid-item p {
+            margin-top: 5px;
+            font-weight: bold;
+            color: rgb(253, 142, 6);
+
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/helmets.html">Helmets</a>
+        <a href="#gears">Protective Gears</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+    <header>
+        <h1>Protective Gears</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="/galary/gloves.png"
+                    alt="gloves">
+                <p>GLOVES</p>
+            </div>
+            <div class="grid-item">
+                <img src="/galary/jackets.png" alt="JACKETS"
+                    alt="jackets">
+                <p>JACKETS</p>
+            </div>
+            <div class="grid-item">
+                <img src="/galary/pant.png"
+                    alt="PANTS">
+                <p>PANTS</p>
+            </div>
+            <div class="grid-item">
+                <img src="/galary/boots.png"
+                    alt="boots">
+                <p>BOOTS</p>
+            </div>
+            <div class="grid-item">
+                <img src="/galary/rally.png"
+                    alt="rally kit">
+                <p>RALLY KIT</p>
+            </div>
+            <div class="grid-item">
+                <img  src="/galary/smoke light.png" alt="smokelight">
+                <p>SMOKE LIGHTS</p>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>

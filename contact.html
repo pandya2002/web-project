@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background: url('/galary/body\ bg.png')       
+        }
+
+        header {
+            background: url('/galary/headerbg.png');
+            background-size: cover;
+            display: flex;
+            height: 150px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: right;
+            background-color: #333;
+        }
+
+        nav a {
+            text-decoration: none;
+            position: relative;
+            display: block;
+            padding: 14px 20px;
+            color: white;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 5px;
+            bottom: 0;
+            left: 0;
+            background-color: #94f722;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        nav a:hover::before {
+            visibility: visible;
+            width: 100%;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-info {
+            background-color: rgb(39, 36, 36);
+            border: 2px solid #f5e50c;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 60%;
+            text-align: left;
+            color: aliceblue;
+        }
+
+        .contact-info h2 {
+            margin-top: 0;
+        }
+
+        .contact-info a {
+            color: #0044cc;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .map {
+            width: 60%;
+            height: 400px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/gears.html">Helmets</a>
+        <a href="/gears.html">Protective Gears</a>
+        <a href="/about.html">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header>
+        <h1>CONTACT US</h1>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Top Gear Bangladesh</h2>
+            <p>Batiss Tabil Jame Masjid Market, Block F Tikka Para, Ring Rd, Dhaka 1207</p>
+            <p>Phone: +8801317262973</p>
+            <p>Email: <a href="mailto:topgearbd@gmail.com" style="color: #94f722;">topgearbd@gmail.com</a></p>
+            <p>Facebook: <a href="https://facebook.com/topgearbd" target="_blank" style="color: #94f722;">facebook.com/topgearbd</a></p>
+        </section>
+        <section class="map">
+            <iframe
+                src="https://maps.google.com/maps?q=Batiss%20Tabil%20Jame%20Masjid%20Market,%20Block%20F%20Tikka%20Para,%20Ring%20Rd,%20Dhaka%201207&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"></iframe>
+        </section>
+    </main>
+</body>
+
+</html>

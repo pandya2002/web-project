@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background: url('/galary/body\ bg.png')       
+        }
+
+        header {
+            background: url('/galary/headerbg.png');
+            background-size: cover;
+            display: flex;
+            height: 150px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: right;
+            background-color: #333;
+        }
+
+        nav a {
+            text-decoration: none;
+            position: relative;
+            display: block;
+            padding: 14px 20px;
+            color: white;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 5px;
+            bottom: 0;
+            left: 0;
+            background-color: #94f722;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        nav a:hover::before {
+            visibility: visible;
+            width: 100%;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            
+        }
+
+        .about-info {
+            background-color: rgb(82, 77, 77);
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 60%;
+            text-align: left;
+            line-height: 1.6;
+            color: aliceblue;
+        }
+
+        .about-info h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>   
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/helmets.html">Helmets</a>
+        <a href="/gears.html">Protective Gears</a>
+        <a href="#about">About Us</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section class="about-info">
+            <h2>Top Gear Bangladesh</h2>
+            <p>Top Gear Bangladesh was founded in 2015 out of a need to support the growing motorcycle community. 2019
+                was the year that changed the bike riding scene in Bangladesh, ushering in conversations about proper
+                riding and protective gear.</p>
+            <p>Top Gear Bangladesh was formed to serve Bangladesh riders. We provide all kinds of motorcycle protective
+                gear including helmets, gloves, jackets, and more.</p>
+            <p>At Top Gear Bangladesh, we only offer the best items that meet global standards.</p>
+            <p>We do not sell any helmets without ECE, DOT, or SHARP and SNELL ratings.</p>
+            <p>We aim to share extensive wisdom from top riders and safety experts.</p>
+        </section>
+    </main>
+</body>
+
+</html>
