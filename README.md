@@ -1,2 +1,1 @@
-# web-project
-intern pro
+INTERNSHIP PROJECT
